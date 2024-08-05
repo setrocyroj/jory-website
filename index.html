@@ -2,29 +2,88 @@
 <title>convert to fat</title>
 <body>
 
-<style>* {cursor: url(https://cur.cursors-4u.net/games/gam-12/gam1113.cur), auto;}</style><a href="https://www.cursors-4u.com/cursor/2010/05/08/wii-pointer-1-tilt-normal.html" target="_blank" title="Wii Pointer #1 Tilt Normal"><img src="https://cur.cursors-4u.net/cursor.png" alt="Wii Pointer #1 Tilt Normal" style="position:absolute; top: 0px; right: 0px;"/></a>
-
-  <button type="button">click to convert to fatass</button>
-<img src=”https://thumbs.dreamstime.com/b/fat-man-eating-fast-food-hamberger-breakfast-overweight-person-diet-failure-happy-smile-who-spoiled-healthy-huge-97203582.jpg
-
-  <html>
+  <!DOCTYPE html>
+<html lang="en">
 <head>
-<style>
-p.ex1 {
-  font-size: 30px;
-}
-p.ex2 {
-  font-size: 50px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passcode System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        input[type="password"] {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            width: 80%;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .error {
+            color: red;
+        }
+        .success {
+            color: green;
+        }
+    </style>
 </head>
 <body>
 
-<p>the button above converts you btw :3 </p>
-<p class="ex1">convert to fatfuck</p>
-<p class="ex2">(disclaimer: this is not to poke fun of any religion or society. i equally love everyone <333)</p>
+<div class="container">
+    <h1>Enter Passcode</h1>
+    <form id="passcodeForm">
+        <input type="password" id="passcode" placeholder="Enter passcode" required>
+        <button type="button" onclick="validatePasscode()">Submit</button>
+    </form>
+    <p id="message" class="error"></p>
+</div>
+
+<script>
+    // Define the correct passcode
+    const correctPasscode = '4999'; // Change this to your desired passcode
+
+    function validatePasscode() {
+        const passcodeInput = document.getElementById('passcode').value;
+        const messageElement = document.getElementById('message');
+
+        if (passcodeInput === correctPasscode) {
+            messageElement.textContent = 'Access granted!';
+            messageElement.className = 'success';
+            // Redirect to a different page or show hidden content
+            // For example, you might redirect to another URL:
+            // window.location.href = 'welcome.html';
+        } else {
+            messageElement.textContent = 'Incorrect passcode. Please try again.';
+            messageElement.className = 'error';
+        }
+    }
+</script>
 
 </body>
 </html>
 
-<img src="https://media.gettyimages.com/id/904136898/photo/man-eating-hamburger.jpg?s=612x612&w=gi&k=20&c=WQIkRe2_B6DvEfRLZaGMO45fySS33jAKqdHznAOOTWc=" alt="fatty" width="500" height="600">
