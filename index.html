@@ -1,5 +1,5 @@
 <html>
-<title>convert to fat</title>
+<title>hmm</title>
 <body>
 
   <!DOCTYPE html>
@@ -65,7 +65,7 @@
 
 <script>
     // Define the correct passcode
-    const correctPasscode = '4999'; // Change this to your desired passcode
+    const correctPasscode = '12345'; // Change this to your desired passcode
 
     function validatePasscode() {
         const passcodeInput = document.getElementById('passcode').value;
@@ -74,9 +74,8 @@
         if (passcodeInput === correctPasscode) {
             messageElement.textContent = 'Access granted!';
             messageElement.className = 'success';
-            // Redirect to a different page or show hidden content
-            // For example, you might redirect to another URL:
-            // window.location.href = 'welcome.html';
+            // Redirect to a different page
+            window.location.href = 'welcome.html'; // Change this to the URL of your target page
         } else {
             messageElement.textContent = 'Incorrect passcode. Please try again.';
             messageElement.className = 'error';
@@ -86,4 +85,3 @@
 
 </body>
 </html>
-
